@@ -22,8 +22,14 @@ $(document).ready(function () {
 	// call stellar.js function
 	$.stellar();
 
-	// call boxslider function
-	$('.bxslider').bxSlider();
+	// call slider function
+	$('.my-slider').unslider();
+	// $('.my-slider').unslider({
+	// 	arrows: {
+	// 			prev: '<a class="' + self._ + '-arrow prev">Prev</a>',
+	// 			next: '<a class="' + self._ + '-arrow next">Next</a>'
+	// 		}
+	// });
 
 });
 
