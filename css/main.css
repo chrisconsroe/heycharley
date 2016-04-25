@@ -41,7 +41,7 @@ nav {
 	position: fixed;
 	top: 0;
 	right: 0;
-	z-index: 2;
+	z-index: 3;
 }
 
 .left-logo img {
@@ -208,10 +208,10 @@ section h1 {
 	color: #FFFFFF;
 }
 
-.bxslider {
+.my-slider {
 	background-color: #FFFFFF;
 	margin-bottom: 0px;
-	padding: 60px 40px;
+	/*padding: 60px 40px;*/
 	max-width: 1100px;
 }
 
@@ -223,6 +223,7 @@ section h1 {
 
 .slider-item img {
 	flex-grow: 1;
+	padding: 50px;
 }
 
 .slider-content {
@@ -243,7 +244,7 @@ section h1 {
 }
 
 .team-card {
-	width: 220px;
+	width: 250px;
 	box-shadow: 0 2px 4px #A6A6A6;
 	background-color: #FFFFFF;
 	border-bottom: 10px solid #51EAC2;
@@ -253,7 +254,7 @@ section h1 {
 
 .team-card:hover {
 	opacity: 1;
-	transition: all .8s;
+	transition: all .3s;
 }
 
 .team-pic {
@@ -280,6 +281,11 @@ section h1 {
 .team-card-social-icons img {
 	width: 20px;
 	padding-right: 10px;
+	opacity: .5;
+}
+
+.team-card-social-icons img:hover {
+	opacity: 1;
 }
 
 /* CONTACT SECTION STYLES */
@@ -416,8 +422,17 @@ label {
 		padding-left: 0px;
 	}
 
+	.about-me-fact img {
+		width: 120px;
+		height: 120px;
+	}
+
 	.about-me-wrapper div:nth-child(even) {
 		margin-left: 0px;
+	}
+
+	.my-slider {
+		padding: 0px;
 	}
 
 	.card-container {
