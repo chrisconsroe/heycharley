@@ -31,6 +31,15 @@ a {
 	font-weight: 400;
 }
 
+section p a {
+	font-weight: 700;
+}
+
+section p a:hover {
+	font-weight: 700;
+	opacity: .5;
+}
+
 *:focus {
     outline: none;
 }
@@ -446,14 +455,14 @@ button:hover {
     	width: 320px;
 	}
 
-	/*	.form-content-container {
+		.form-content-container {
 		display: flex;
 		flex-direction: column;
 	}
 
 	.form-content-container > div {
 		width: 100%;
-	}*/
+	}
 
 	.top-line {
 		flex-direction: column;
@@ -504,9 +513,8 @@ button:hover {
 	.slider-item img {
 		flex-grow: 1;
 		width: 60%;
-    	padding: 0 19%
+    	padding: 20px 19%
 	}
-
 
 	footer {
 		padding: 0px 24px;
