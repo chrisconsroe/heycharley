@@ -4,32 +4,46 @@ $(document).ready(function () {
 
 	$('.nav-bar-icon').click(function() {
 		menu.slideToggle();
+
 	});
 
-	//Fix bug where menu is still hidden at larger page widths
-	$(window).resize(function() {
-		var width = $(window).width();
+	// find a elements in nav bar when visible and close after click event
+	var menuItems = menu.find('a');
 
-	// if width is greater than 768 pixels and has style  attribute hidden
-		if (width > 768 && menu.is(':hidden')) {
-			menu.removeAttr('style');
-		}
+	menuItems.click(function() {
+		menu.slideToggle();
 	})
+
+	// only call stellar js on desktop because it looks weird on mobile
+	var width = $(window).width();
+
+		if (width > 768) {
+			$.stellar();
+		}
 
 	// call onePageNav function
 	$('.nav-wrapper').onePageNav();
 
-	// call stellar.js function
-	$.stellar();
 
 	// call slider function
-	$('.my-slider').unslider();
-	// $('.my-slider').unslider({
-	// 	arrows: {
-	// 			prev: '<a class="' + self._ + '-arrow prev">Prev</a>',
-	// 			next: '<a class="' + self._ + '-arrow next">Next</a>'
-	// 		}
-	// });
+	$('.my-slider').unslider({
+		speed: 1200,
+		dots: true,
+        arrows: true,
+	});
+
+	var scripts = [
+	'http://stephband.info/jquery.event.move/js/jquery.event.move.js',
+	'http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js'
+	];
+
+
+	$.getScript(scripts[0]);
+
+	//  Once our script is loaded, we can initSwipe to add swipe support
+	$.getScript(scripts[1], function() {
+		$('.sliderman').unslider('initSwipe');
+	});
 
 });
 

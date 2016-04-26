@@ -35,7 +35,7 @@ a {
     outline: none;
 }
 /********************* NAV STYLES ***********************/
-nav {
+.top-nav {
 	background-color: #FFFFFF;
 	width: 100%;
 	position: fixed;
@@ -97,7 +97,7 @@ nav {
 /********************* FOOTER STYLES ***********************/
 footer {
 	background-color: #132144;
-	color: #FFFFFF;
+	color: #F2F2F2;
 	padding: 40px 122px;
 }
 
@@ -118,6 +118,10 @@ footer li:first-child {
 
 footer ul li {
 	margin-bottom: 12px;
+}
+
+footer a:hover {
+	color: #FFFFFF;
 }
 
 
@@ -334,7 +338,7 @@ form:focus {
 	padding: 10px 10px 10px 0px;
 }
 
-input {
+/*input {
 	min-height: 40px;
 }
 
@@ -347,9 +351,9 @@ input, textarea {
 	padding: 10px;
 	font-family: 'PT Sans', sans-serif;
 	color: #132144;
-}
+}*/
 
-form button {
+button {
 	border: 2px solid #5878DD;
 	background-color: #FFFFFF;
 	font-family: 'PT Sans', sans-serif;
@@ -359,22 +363,23 @@ form button {
 	transition: all ease .2s;
 }
 
-form button:hover {
+button:hover {
 	color: #FFFFFF;
 	background-color: #5878DD;
 	font-weight: 400;
 }
 
-label {
+/*label {
 	font-family: 'PT Sans', sans-serif;
 	color: #D4D4D4;
 	font-weight: 700;
 }
-
+*/
 .social-media-cta {
 	display: flex;
 	align-items: center;
 	opacity: .5;
+	margin-bottom: 20px;
 }
 
 .social-media-cta img {
@@ -431,10 +436,6 @@ label {
 		margin-left: 0px;
 	}
 
-	.my-slider {
-		padding: 0px;
-	}
-
 	.card-container {
 		flex-direction: column;
 		align-items: center;
@@ -445,14 +446,14 @@ label {
     	width: 320px;
 	}
 
-	.form-content-container {
+	/*	.form-content-container {
 		display: flex;
 		flex-direction: column;
 	}
 
 	.form-content-container > div {
 		width: 100%;
-	}
+	}*/
 
 	.top-line {
 		flex-direction: column;
@@ -483,7 +484,7 @@ label {
 	}
 
 	.slider-content {
-		padding: 0px 5px;
+		padding: 0 19%
 	}
 
 	.slider-item {
@@ -491,6 +492,21 @@ label {
 		justify-content: space-around;
 		padding: 0px 5px;
 	}
+
+	.my-slider {
+		padding: 0px;
+	}
+
+	.my-slider h2 {
+		font-size: 36px;
+	}
+
+	.slider-item img {
+		flex-grow: 1;
+		width: 60%;
+    	padding: 0 19%
+	}
+
 
 	footer {
 		padding: 0px 24px;
