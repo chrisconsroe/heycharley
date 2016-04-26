@@ -11,7 +11,12 @@ $(document).ready(function () {
 	var menuItems = menu.find('a');
 
 	menuItems.click(function() {
-		menu.slideToggle();
+
+		if (menu.css('display') === 'block') {
+			menu.slideToggle();
+		} else {
+			return
+		}
 	})
 
 	// only call stellar js on desktop because it looks weird on mobile
