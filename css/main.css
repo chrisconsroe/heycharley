@@ -7,7 +7,7 @@ html, body {
 
 p, li {
 	font-family: 'PT Sans', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 p {
@@ -42,6 +42,11 @@ section p a:hover {
 
 *:focus {
     outline: none;
+}
+
+.auto {
+	margin: auto;
+	max-width: 1100px;
 }
 /********************* NAV STYLES ***********************/
 .top-nav {
@@ -137,6 +142,7 @@ footer a:hover {
 /********************* SECTION STYLES ***********************/
 section {
 	padding: 85px 122px;
+	margin: 0 auto;
 }
 
 section h1 {
@@ -161,7 +167,6 @@ section h1 {
 
 .top-content {
 	padding: 100px 0px;
-	max-width: 480px;
 }
 
 .top-content h1 {
@@ -476,12 +481,6 @@ button:hover {
 
 	#home {
 		background-image: url(../img/background-main-mobile.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-attachment: fixed;
 	}
 
 	.top-content {
@@ -530,5 +529,11 @@ button:hover {
 
 	.footer-wrapper {
 		flex-direction: column;
+	}
+}
+
+@media (min-width: 1800px) {
+	#home {
+		background-image: url(../img/background-main5.png);
 	}
 }

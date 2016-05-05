@@ -17,6 +17,8 @@
   text-align: center;
   background-color: #FFFFFF;
   padding: 15px 0;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .unslider-nav ol li {
